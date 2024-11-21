@@ -105,7 +105,8 @@
      flymake-collection-proselint
      (flymake-collection-vale :disabled t))
     (notmuch-message-mode flymake-collection-proselint)
-    (nxml-mode flymake-collection-xmllint))
+    (nxml-mode flymake-collection-xmllint)
+    (go-ts-mode flymake-collection-golangci-lint :disabled t))
   "Configuration mapping major-modes to `flymake' backends."
   :type '(alist
           :key-type
